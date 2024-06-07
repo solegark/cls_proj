@@ -2,8 +2,6 @@
 
 FROM ubuntu:22.04
 
-RUN apt install s3cmd
-
 COPY . /app
 COPY ../bin/* /app/bin/
 
