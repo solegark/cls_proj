@@ -2,6 +2,8 @@
 
 FROM ubuntu:22.04
 
+RUN mkdir /app/bin
+
 COPY . /app
 COPY ../bin/* /app/bin/
 
