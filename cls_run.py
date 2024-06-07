@@ -28,8 +28,8 @@ formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 root.addHandler(handler)
 
-Model = pickle.load(open('autofos_bin/model_20231108.m', 'rb')) # Загружаем модель
-vec = pickle.load(open('autofos_bin/vectorizer_20231108.pkl', 'rb')) #Загружаем словари с векторами
+Model = pickle.load(open('bin/model_20231108.m', 'rb')) # Загружаем модель
+vec = pickle.load(open('bin/vectorizer_20231108.pkl', 'rb')) #Загружаем словари с векторами
 
 def clean_text(text): #чистим текст
 	logging.info('start clean text')
