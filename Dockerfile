@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ubuntu:22.04
+FROM python:3
 
 RUN mkdir -p /app/bin
 RUN chmod 777 /app/bin
