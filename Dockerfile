@@ -3,6 +3,7 @@
 FROM ubuntu:22.04
 
 RUN mkdir -p /app/bin
+RUN chmod 777 /app/bin
 
 COPY . /app
 COPY ../bin/* /app/bin/
