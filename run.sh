@@ -7,4 +7,4 @@ if [ ! -d "$dr" ]; then
 	s3cmd get -r s3://otus-cls/ bin
 fi
 docker build -t cls_proj:latest .
-docker run -t -dp 5000:8080 cls_proj
+docker run -t -dp 8080:5000 cls_proj
