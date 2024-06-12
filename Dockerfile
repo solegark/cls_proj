@@ -1,12 +1,8 @@
-# syntax=docker/dockerfile:1
+FROM python:3.11-slim
 
-FROM python:3
+WORKDIR /app
 
-RUN mkdir -p /app/bin
-RUN chmod 777 /app/bin
+COPY . .
 
-COPY . /app
-#COPY ../bin/* /app/bin/
-
-#RUN make /app
-#CMD python3 /app/cls_py.py
+RUN pip install -r requirements.txt
+CMD ["python3","cls_run.py"]
