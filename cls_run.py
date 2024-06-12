@@ -9,15 +9,14 @@ import logging
 import sys
 import numpy as np
 from sklearn import linear_model
-#from sklearn.svm import LinearSVC
 import nltk
-from nltk.tokenize import wordpunct_tokenize
-from nltk.corpus import stopwords
-
 from pymystem3 import Mystem
 from string import punctuation
 
 mystem = Mystem() 
+nltk.download('stopwords')
+
+from nltk.corpus import stopwords
 russian_stopwords = stopwords.words("russian")
 
 root = logging.getLogger()
