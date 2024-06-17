@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cls-deploy
+  labels:
+    app: cls
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cls
+  template:
+    metadata:
+      labels:
+        app: cls
+    spec:
+      containers:
+      - name: cls-cntr
+        image: cr.yandex/crpn0ichd5bsrptua8ae/cls-img:latest
+        ports:
+        - containerPort: 5000
+      imagePullSecrets:
+      - name: ya-cr-key
