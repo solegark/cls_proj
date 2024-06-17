@@ -15,3 +15,8 @@
 * Dockerfile - сборка образа
 * kuber/cls-deploy.yaml - манифест для kubernetes, создающий ресурс deploy с 3 подами
 * kuber/cls-service.yaml - манифест для kubernetes, создающий ресурс service типа LoadBalancer
+
+  ## Модели
+  Модели размещены в S3-хранилище на Yandex Cloud
+  
+  s3://otus-cls/
