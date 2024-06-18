@@ -21,7 +21,7 @@
 
 Формат запроса: POST-запрос в формате text = <текст запроса>
 
-Пример: *curl -X POST http://xx.xx.xx.xx:5000 -d text="как оплатить епд?"*
+Пример: *curl -X POST http://xx.xx.xx.xx:8080 -d text="как оплатить епд?"*
 
 ## Презентация по проекту
 https://docs.google.com/presentation/d/1ITVYPi4FLKnNH9oKsvn6J86P4MLB5cL4Tq_LCYBvDwQ/edit?usp=sharing
